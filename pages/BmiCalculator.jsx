@@ -13,7 +13,7 @@ function BmiCalculator() {
   }
 
   return (
-    <div>
+    <div className="IbmContainer">
       {disappear && (
         <div className="container_1" style={{ width: "500px" }}>
           <h2>BMI Calculator</h2>

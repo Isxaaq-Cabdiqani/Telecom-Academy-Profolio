@@ -10,22 +10,25 @@ function MyLayout() {
     setIslogin((p) => !p);
   }
   return (
-    <>
+    <div id="TheLayout">
       {islogin == false && (
         <div className="loginPage">
-          <input
-            type="text"
-            placeholder="Enter your name"
-            onChange={(e) => setName(e.target.value)}
-          />
-          <br />
-          <input type="password" placeholder="Enter your password" />
-          <br />
-          <button onClick={Login}>Login</button>
+          <div className="loginCard">
+            <h2>Welcome to my Profolio</h2>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              onChange={(e) => setName(e.target.value)}
+            />
+            <br />
+            <input type="password" placeholder="Enter your password" />
+            <br />
+            <button onClick={Login}>Login</button>
+          </div>
         </div>
       )}
       {islogin && (
-        <div id="Layout">
+        <div id="LayoutDisplay">
           <header>Projects</header> <div className="nameHolder">{name}</div>
           <div className="sideBar">
             <Link to={"/BmiCalculator"}>Bmi Calculator</Link>
@@ -41,7 +44,7 @@ function MyLayout() {
           <footer>Projects</footer>
         </div>
       )}
-    </>
+    </div>
   );
 }
 

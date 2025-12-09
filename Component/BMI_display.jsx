@@ -28,47 +28,49 @@ function BMI_display() {
     setName("");
   }
   return (
-    <div className="container" style={{ width: "300px" }}>
-      <label>Name</label>
-      <br />
-      <input
-        type="text"
-        onChange={(e) => setName(e.target.value)}
-        value={name}
-        placeholder="Enter your name"
-      />
-      <br />
-      <label>Hieght</label>
-      <br />
-      <input
-        type="text"
-        onChange={(e) => setHieght(e.target.value)}
-        value={hieght}
-        placeholder="Enter your hieght in cm"
-      />
-      <br />
-      <label>Wieght</label>
-      <br />
-      <input
-        type="text"
-        onChange={(e) => setWieght(e.target.value)}
-        value={wieght}
-        placeholder="Enter your wieght in KG"
-      />
-      <br />
-      <br />
-      <button onClick={calculate}>Calculate</button>
-      <br />
-      {result > 0 && <button onClick={reset}>Reset</button>}
-      <br />
+    <div className="IbmContainer">
+      <div className="container" style={{ width: "300px" }}>
+        <label>Name</label>
+        <br />
+        <input
+          type="text"
+          onChange={(e) => setName(e.target.value)}
+          value={name}
+          placeholder="Enter your name"
+        />
+        <br />
+        <label>Hieght</label>
+        <br />
+        <input
+          type="text"
+          onChange={(e) => setHieght(e.target.value)}
+          value={hieght}
+          placeholder="Enter your hieght in cm"
+        />
+        <br />
+        <label>Wieght</label>
+        <br />
+        <input
+          type="text"
+          onChange={(e) => setWieght(e.target.value)}
+          value={wieght}
+          placeholder="Enter your wieght in KG"
+        />
+        <br />
+        <br />
+        <button onClick={calculate}>Calculate</button>
+        <br />
+        {result > 0 && <button onClick={reset}>Reset</button>}
+        <br />
 
-      {result > 0 && (
-        <div>
-          <h4>Hi {name} her is your Result</h4>
-          <p>Your BMI:{result} </p>
-          <p>Category: {category} </p>
-        </div>
-      )}
+        {result > 0 && (
+          <div>
+            <h4>Hi {name} her is your Result</h4>
+            <p>Your BMI:{result} </p>
+            <p>Category: {category} </p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
