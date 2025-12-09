@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 
 import BmiCalculator from "../pages/BmiCalculator";
 import Calculator from "../pages/Calculator";
@@ -12,9 +12,9 @@ import HotelBooking from "../pages/HotelBooking";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
-        <Route path="/Telecom-Academy-Profolio/" element={<MyLayout />}>
+        <Route path="/" element={<MyLayout />}>
           <Route index element={<Home />} />
           <Route path="BmiCalculator" element={<BmiCalculator />} />
           <Route path="Calculator" element={<Calculator />} />
@@ -24,7 +24,7 @@ function App() {
           <Route path="HotelBooking" element={<HotelBooking />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
