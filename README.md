@@ -1,9 +1,9 @@
-# Telecom Academy projects profolio
+# Profolio
 
 ## Hi there 🌟
 
-Welcome to this project thati use to combine all of my projects that I learn in Telecom Academy.
+### Welcome to my Profolio, here you will now me better and take a look at my projects.
 
-It make my projects orgonized and eazy to find, and it's a great way to track my progress and my learning curve.
+
 
 
